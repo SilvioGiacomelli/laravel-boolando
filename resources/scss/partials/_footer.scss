@@ -1,0 +1,25 @@
+.intro-foot{
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  p, li{
+    color: white;
+    list-style: none;
+  }
+
+  ul{
+    display: flex;
+    padding: 10px 10px 0 0;
+  }
+
+  a{
+    padding-right: 10px;
+  }
+
+  footer{
+    background-color: black;
+  }
