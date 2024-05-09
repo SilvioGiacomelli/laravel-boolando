@@ -2,9 +2,9 @@
     <div class="jumbo">
         <div>
             <ul>
-                <li>Uomo</li>
-                <li>Donne</li>
-                <li>Bambini</li>
+                <li><a href="{{ route('uomo') }}">Uomo</a></li>
+                <li><a href="{{ route('donna') }}">Donne</a></li>
+                <li><a href="{{ route('bambino') }}">Bambini</a></li>
             </ul>
         </div>
         <img class="logo" src="/img/boolean-logo.png ">

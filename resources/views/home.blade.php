@@ -9,10 +9,8 @@
         @foreach ($card['products'] as $product)
             <div class="card">
                 <div class="box">
-                    <img class="show" src="{{ Vite::asset('public/img/' . $product['frontImage']) }}" alt=""
-                        v-show="!isHovering">
-                    {{-- <img class="hide" src="{{ Vite::asset('public/img/' . $product['backImage']) }}" alt=""
-                        v-show="isHovering"> --}}
+                    <img class="show" src="{{ Vite::asset('public/img/' . $product['frontImage']) }}" alt="">
+                    <img class="hide" src="{{ Vite::asset('public/img/' . $product['backImage']) }}" alt="">
                     <div class="cuore">
                         <h4>&#9829;</h4>
                     </div>
