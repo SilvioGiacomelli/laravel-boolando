@@ -1,11 +1,24 @@
 @extends('layout.main')
 
 @section('content')
+    @php
+        $card = config('product-card');
+    @endphp
+
     <div class="container">
-        @foreach ($products as $product)
+        @foreach ($card['products'] as $product)
             <div class="card">
                 <div class="box">
-                    <img class="show" src="{{ asset('img/' . $product['frontImage']) }}" v-show="!isHovering">
+                    <img class="show" src="{{ Vite::asset('public/img/' . $product['frontImage']) }}" alt=""
+                        v-show="!isHovering">
+                    {{-- <img class="hide" src="{{ Vite::asset('public/img/' . $product['backImage']) }}" alt=""
+                        v-show="isHovering"> --}}
+                    <div class="cuore">
+                        <h4>&#9829;</h4>
+                    </div>
+                    @foreach ($product['badges'] as $badge)
+                        <div class="{{ $badge['type'] }}">{{ $badge['value'] }}</div>
+                    @endforeach
                 </div>
                 <p class="marca">{{ $product['brand'] }}</p>
                 <p class="title">{{ $product['name'] }}</p>
