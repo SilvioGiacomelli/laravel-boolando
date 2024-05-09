@@ -5,6 +5,7 @@
                 <li><a href="{{ route('uomo') }}">Uomo</a></li>
                 <li><a href="{{ route('donna') }}">Donne</a></li>
                 <li><a href="{{ route('bambino') }}">Bambini</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
             </ul>
         </div>
         <img class="logo" src="/img/boolean-logo.png ">
